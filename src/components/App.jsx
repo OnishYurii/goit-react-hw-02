@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Description } from './Description/Description';
+import { ClickBtns } from './Options/Options';
 
 export const App = () => {
   const [count, setCount] = useState({
@@ -14,6 +15,7 @@ export const App = () => {
   return (
     <div>
       <Description />
+      <ClickBtns onCount={handleClick} />
     </div>
   );
 };
