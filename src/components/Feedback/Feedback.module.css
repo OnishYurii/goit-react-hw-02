@@ -1,0 +1,28 @@
+.container {
+  max-width: 150px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-inline-start: 0px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  padding: 2px 10px;
+  width: 50px;
+  text-align: center;
+  font-weight: 700;
+  color: #00ff73;
+  background: #000;
+  border: 1px solid #00ff73;
+  border-radius: 5%;
+}
+
+.list {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
