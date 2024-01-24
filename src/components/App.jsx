@@ -25,7 +25,7 @@ export const App = () => {
   };
 
   const handleReset = () => {
-    setCount({ ...count, good: 0, neutral: 0, bad: 0 });
+    setCount({ good: 0, neutral: 0, bad: 0 });
   };
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export const App = () => {
   return (
     <div>
       <Description />
-      <ClickBtns onCount={handleCount} totalFeedback={totalFeedback} onReset={handleReset} />
+      <ClickBtns onCount={handleCount} hasFeedbacks={!!totalFeedback} onReset={handleReset} />
       {totalFeedback === 0 ? (
         <Notification />
       ) : (

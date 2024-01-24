@@ -1,6 +1,6 @@
 import css from './Options.module.css';
 
-export const ClickBtns = ({ onCount, totalFeedback, onReset }) => {
+export const ClickBtns = ({ onCount, hasFeedbacks, onReset }) => {
   return (
     <ul className={css.btnList}>
       <li>
@@ -19,7 +19,7 @@ export const ClickBtns = ({ onCount, totalFeedback, onReset }) => {
         </button>
       </li>
       <li>
-        {!(totalFeedback === 0) && (
+        {hasFeedbacks && (
           <button onClick={onReset} className={css.button}>
             Reset
           </button>
